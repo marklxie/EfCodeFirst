@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20201012180837_Added Order.cs" />
+    <Compile Remove="Migrations\20201012180837_Added Order.Designer.cs" />
+    <Compile Remove="Migrations\20201012184317_added orderline.cs" />
+    <Compile Remove="Migrations\20201012184317_added orderline.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="microsoft.entityframeworkcore.design" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="microsoft.entityframeworkcore.proxies" Version="3.1.8" />
+    <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="3.1.8" />
+    <PackageReference Include="microsoft.entityframeworkcore.tools" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
